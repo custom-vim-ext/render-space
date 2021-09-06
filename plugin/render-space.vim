@@ -9,7 +9,3 @@ function! RenderSpace()
 		set list!
 	endif
 endfunction
-
-augroup RenderSpace
-	exec ":call RenderSpace()"
-augroup END
