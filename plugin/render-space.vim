@@ -1,5 +1,5 @@
 let g:renderstatus = 'false'
-function! RenderSpaces()
+function! RenderSpace()
 	if g:renderstatus == 'false'
 		let g:renderstatus = 'true'
 		set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
@@ -9,3 +9,7 @@ function! RenderSpaces()
 		set list!
 	endif
 endfunction
+
+augroup RenderSpace
+	exec ":call RenderSpace()"
+augroup END
