@@ -9,3 +9,6 @@ function! RenderSpace()
 		set list!
 	endif
 endfunction
+
+" Commands
+command! RenderSpace	call RenderSpace()
