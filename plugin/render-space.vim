@@ -1,3 +1,4 @@
+let g:renderstatus = 'false'
 function! RenderSpaces()
 	if g:renderstatus == 'false'
 		let g:renderstatus = 'true'
@@ -8,5 +9,3 @@ function! RenderSpaces()
 		set list!
 	endif
 endfunction
-
-execute ':call RenderSpaces()'
